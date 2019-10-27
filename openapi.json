@@ -23,7 +23,20 @@
       "get": {
         "summary": "get all products",
         "tags": [],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./models/products.v1.json"
+                }
+              }
+            }
+          }
+        },
+        "description": "Returns all products"
       },
       "post": {
         "summary": "post a product",
@@ -69,7 +82,42 @@
         "tags": [
           "users"
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./models/users.v1.json"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              },
+              "text/html": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              },
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              },
+              "application/EDI-X12": {
+                "schema": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/users/{userid}": {
