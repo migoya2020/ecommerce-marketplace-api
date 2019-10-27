@@ -1,6 +1,7 @@
 {
   "title": "countries",
   "type": "object",
+  "description": "countries of the world",
   "properties": {
     "id": {
       "type": "integer"
@@ -20,6 +21,5 @@
   "required": [
     "id",
     "code"
-  ],
-  "description": "countries of the world"
+  ]
 }
