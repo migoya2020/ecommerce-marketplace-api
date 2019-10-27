@@ -1,0 +1,18 @@
+{
+  "title": "order_items",
+  "type": "object",
+  "x-tags": [
+    "order items"
+  ],
+  "properties": {
+    "id": {
+      "$ref": "./orders.v1.json"
+    },
+    "product_it": {
+      "$ref": "./products.v1.json"
+    },
+    "quantity": {
+      "type": "integer"
+    }
+  }
+}

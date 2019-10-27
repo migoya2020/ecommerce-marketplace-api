@@ -1,0 +1,30 @@
+{
+  "title": "merchants",
+  "type": "object",
+  "x-tags": [
+    "marchants"
+  ],
+  "description": "listof merchants",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "merchant_name": {
+      "type": "string"
+    },
+    "country_code": {
+      "$ref": "./countries.v1.json"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "admin_id": {
+      "$ref": "./users.v1.json"
+    }
+  },
+  "required": [
+    "id",
+    "merchant_name"
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "eCommerce marketplace API",
+    "version": "1.0",
+    "description": "API for an ecommerce marketplace Demo"
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:3100"
+    }
+  ],
+  "paths": {
+    "/products": {
+      "get": {
+        "summary": "get all products",
+        "tags": [],
+        "responses": {}
+      },
+      "post": {
+        "summary": "post a product",
+        "tags": [],
+        "responses": {}
+      }
+    },
+    "/products/{prod_id}": {
+      "parameters": [
+        {
+          "type": "string",
+          "name": "prod_id",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "put a product",
+        "tags": [],
+        "responses": {}
+      },
+      "patch": {
+        "summary": "patch a product",
+        "tags": [],
+        "responses": {}
+      },
+      "delete": {
+        "summary": "delete a product",
+        "tags": [],
+        "responses": {}
+      }
+    },
+    "/users": {
+      "get": {
+        "summary": "get all users",
+        "tags": [
+          "users"
+        ],
+        "responses": {}
+      },
+      "post": {
+        "summary": "post a user",
+        "tags": [
+          "users"
+        ],
+        "responses": {}
+      }
+    },
+    "/users/{userid}": {
+      "parameters": [
+        {
+          "type": "string",
+          "name": "userid",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "put a  user with id",
+        "tags": [],
+        "responses": {}
+      },
+      "patch": {
+        "summary": "patch a user",
+        "tags": [],
+        "responses": {}
+      },
+      "delete": {
+        "summary": "delete a user",
+        "tags": [],
+        "responses": {}
+      }
+    },
+    "/merchants/{merchantid}": {
+      "parameters": [
+        {
+          "type": "string",
+          "name": "merchantid",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "put": {
+        "summary": "put a  merchant with id",
+        "tags": [
+          "marchants"
+        ],
+        "responses": {}
+      },
+      "patch": {
+        "summary": "patch a merchant",
+        "tags": [
+          "marchants"
+        ],
+        "responses": {}
+      },
+      "delete": {
+        "summary": "delete a merchant",
+        "tags": [
+          "marchants"
+        ],
+        "responses": {}
+      }
+    },
+    "/merchants": {
+      "get": {
+        "summary": "get merchants",
+        "tags": [],
+        "responses": {}
+      },
+      "post": {
+        "summary": "post merchants",
+        "tags": [],
+        "responses": {}
+      }
+    },
+    "/countries": {
+      "get": {
+        "summary": "get countries",
+        "tags": [
+          "countries"
+        ],
+        "responses": {},
+        "parameters": []
+      },
+      "post": {
+        "summary": "post countries",
+        "tags": [
+          "countries"
+        ],
+        "responses": {}
+      }
+    },
+    "/countries/{countryid}": {
+      "parameters": [
+        {
+          "type": "string",
+          "name": "countryid",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "delete": {
+        "summary": "delete a  country",
+        "tags": [],
+        "responses": {}
+      },
+      "put": {
+        "summary": "put a country with id",
+        "tags": [],
+        "responses": {}
+      },
+      "patch": {
+        "summary": "patch a country with id",
+        "tags": [],
+        "responses": {}
+      }
+    },
+    "/orders/{orderid}": {
+      "parameters": [
+        {
+          "type": "string",
+          "name": "orderid",
+          "in": "path",
+          "required": true
+        }
+      ],
+      "delete": {
+        "summary": "delete an order",
+        "tags": [],
+        "responses": {}
+      },
+      "patch": {
+        "summary": "patch an order  with id",
+        "tags": [],
+        "responses": {}
+      }
+    },
+    "/orders": {
+      "get": {
+        "summary": "get orders",
+        "tags": [
+          "orders"
+        ],
+        "responses": {}
+      },
+      "post": {
+        "summary": "post orders",
+        "tags": [
+          "orders"
+        ],
+        "responses": {}
+      }
+    },
+    "/order-items": {
+      "get": {
+        "summary": "get order items",
+        "tags": [
+          "ordered items"
+        ],
+        "responses": {}
+      },
+      "post": {
+        "summary": "post order items",
+        "tags": [
+          "ordered items"
+        ],
+        "responses": {}
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {}
+  }
+}

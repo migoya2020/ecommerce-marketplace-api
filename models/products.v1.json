@@ -1,0 +1,44 @@
+{
+  "title": "products",
+  "type": "object",
+  "x-tags": [
+    "product"
+  ],
+  "description": "Product model",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "merchant_id": {
+      "$ref": "./merchants.v1.json"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "array",
+      "default": "in_stock",
+      "enum": [
+        "out_of_stock",
+        "in_stock",
+        "running_low"
+      ],
+      "description": "status: running_low = less that 20. ",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "date and time that the product was created in the system"
+    }
+  },
+  "required": [
+    "id",
+    "name"
+  ]
+}

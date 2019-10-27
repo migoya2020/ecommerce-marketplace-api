@@ -1,0 +1,25 @@
+{
+  "title": "countries",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "code": {
+      "type": "integer",
+      "description": "country code"
+    },
+    "continent_name": {
+      "type": "string",
+      "description": "region"
+    }
+  },
+  "required": [
+    "id",
+    "code"
+  ],
+  "description": "countries of the world"
+}

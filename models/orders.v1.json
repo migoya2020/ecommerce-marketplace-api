@@ -1,0 +1,26 @@
+{
+  "title": "orders",
+  "type": "object",
+  "x-tags": [
+    "orders"
+  ],
+  "description": "product orders",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "user_id": {
+      "$ref": "./users.v1.json"
+    },
+    "status": {
+      "type": "string"
+    },
+    "craeted_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

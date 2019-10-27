@@ -1,0 +1,30 @@
+{
+  "title": "users",
+  "type": "object",
+  "x-tags": [
+    "users"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "country_code": {
+      "$ref": "./countries.v1.json"
+    }
+  },
+  "required": [
+    "id",
+    "first_name",
+    "last_name"
+  ]
+}
